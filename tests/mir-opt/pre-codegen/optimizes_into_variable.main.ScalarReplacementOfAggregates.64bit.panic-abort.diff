@@ -26,8 +26,8 @@
   
       bb0: {
           StorageLive(_1);
-          _2 = AddWithOverflow(const 2_i32, const 2_i32);
-          assert(!move (_2.1: bool), "attempt to compute `{} + {}`, which would overflow", const 2_i32, const 2_i32) -> [success: bb1, unwind unreachable];
+          _2 = AddWithOverflow(const 285212689_i32, const 285212689_i32);
+          assert(!move (_2.1: bool), "attempt to compute `{} + {}`, which would overflow", const 285212689_i32, const 285212689_i32) -> [success: bb1, unwind unreachable];
       }
   
       bb1: {

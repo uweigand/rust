@@ -6,8 +6,8 @@
 // EMIT_MIR return_place.add.PreCodegen.before.mir
 fn add() -> u32 {
     // CHECK-LABEL: fn add(
-    // CHECK: _0 = const 4_u32;
-    2 + 2
+    // CHECK: _0 = const 570425378_u32;
+    0x11000011 + 0x11000011 // Endian-invariant value.
 }
 
 fn main() {

@@ -16,9 +16,9 @@ pub fn fn0() -> bool {
     // CHECK-NOT: = const false;
     // CHECK-NOT: = const true;
     // CHECK: _0 = [[ret]];
-    let mut pair = (1, false);
+    let mut pair = (0x11000011, false); // Endian-invariant value.
     let ptr = core::ptr::addr_of_mut!(pair.1);
-    pair = (1, false);
+    pair = (0x11000011, false);
     unsafe {
         *ptr = true;
     }

@@ -12,15 +12,15 @@
   
       bb0: {
 -         StorageLive(_1);
--         _1 = (const 1_u32, const 2_u32);
+-         _1 = (const 285212689_u32, const 570425378_u32);
 +         nop;
-+         _1 = const (1_u32, 2_u32);
++         _1 = const (285212689_u32, 570425378_u32);
           StorageLive(_2);
           StorageLive(_3);
 -         _3 = _1;
 -         _2 = consume(move _3) -> [return: bb1, unwind unreachable];
-+         _3 = const (1_u32, 2_u32);
-+         _2 = consume(const (1_u32, 2_u32)) -> [return: bb1, unwind unreachable];
++         _3 = const (285212689_u32, 570425378_u32);
++         _2 = consume(const (285212689_u32, 570425378_u32)) -> [return: bb1, unwind unreachable];
       }
   
       bb1: {
@@ -34,6 +34,6 @@
 + }
 + 
 + ALLOC0 (size: 8, align: 4) {
-+     01 00 00 00 02 00 00 00                         │ ........
++     11 00 00 11 22 00 00 22                         │ ....".."
   }
   

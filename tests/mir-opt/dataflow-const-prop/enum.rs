@@ -1,4 +1,5 @@
 //@ test-mir-pass: DataflowConstProp
+//@ ignore-endian-big
 // EMIT_MIR_FOR_EACH_BIT_WIDTH
 
 #![feature(custom_mir, core_intrinsics, rustc_attrs)]

@@ -21,12 +21,12 @@
   
       bb0: {
           StorageLive(_2);
--         _2 = (const 1_i32, const false);
-+         _2 = const (1_i32, false);
+-         _2 = (const 285212689_i32, const false);
++         _2 = const (285212689_i32, false);
           StorageLive(_3);
           _3 = &raw mut (_2.1: bool);
--         _2 = (const 1_i32, const false);
-+         _2 = const (1_i32, false);
+-         _2 = (const 285212689_i32, const false);
++         _2 = const (285212689_i32, false);
           StorageLive(_4);
           (*_3) = const true;
           _4 = const ();
@@ -47,6 +47,6 @@
 + }
 + 
 + ALLOC0 (size: 8, align: 4) {
-+     01 00 00 00 00 __ __ __                         │ .....░░░
++     11 00 00 11 00 __ __ __                         │ .....░░░
   }
   

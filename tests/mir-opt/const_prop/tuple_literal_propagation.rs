@@ -4,8 +4,8 @@
 
 fn main() {
     // CHECK-LABEL: fn main(
-    // CHECK: = consume(const (1_u32, 2_u32))
-    let x = (1, 2);
+    // CHECK: = consume(const (285212689_u32, 570425378_u32))
+    let x = (0x11000011, 0x22000022); // Endian-invariant values.
     consume(x);
 }
 

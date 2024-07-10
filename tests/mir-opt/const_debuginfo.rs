@@ -1,5 +1,6 @@
 //@ test-mir-pass: SingleUseConsts
 //@ compile-flags: -C overflow-checks=no -Zmir-enable-passes=+GVN
+//@ ignore-endian-big
 
 #![allow(unused)]
 

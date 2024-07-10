@@ -9,6 +9,6 @@ fn main() {
     // CHECK: debug a => [[a:_.*]];
     // CHECK: [[slice:_.*]] = const {{.*}} as &[u32] (PointerCoercion(Unsize));
     // CHECK: assert(const true,
-    // CHECK: [[a]] = const 2_u32;
-    let a = (&[1u32, 2, 3] as &[u32])[1];
+    // CHECK: [[a]] = const 570425378_u32;
+    let a = (&[0x11000011u32, 0x22000022, 0x33000033] as &[u32])[1]; // Endian-invariant values.
 }

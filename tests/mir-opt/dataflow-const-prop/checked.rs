@@ -1,5 +1,6 @@
 //@ test-mir-pass: DataflowConstProp
 //@ compile-flags: -Coverflow-checks=on
+//@ ignore-endian-big
 // EMIT_MIR_FOR_EACH_PANIC_STRATEGY
 
 // EMIT_MIR checked.main.DataflowConstProp.diff

@@ -13,7 +13,7 @@ struct Point {
 // EMIT_MIR optimizes_into_variable.main.SimplifyLocals-final.after.mir
 // EMIT_MIR optimizes_into_variable.main.PreCodegen.after.mir
 fn main() {
-    let x = 2 + 2;
+    let x = 0x11000011 + 0x11000011; // Endian-invariant value.
     let y = [0, 1, 2, 3, 4, 5][3];
     let z = (Point { x: 12, y: 42 }).y;
 }

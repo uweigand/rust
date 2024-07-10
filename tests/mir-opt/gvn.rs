@@ -1,6 +1,7 @@
 //@ test-mir-pass: GVN
 // EMIT_MIR_FOR_EACH_PANIC_STRATEGY
 //@ only-64bit
+//@ ignore-endian-big
 
 #![feature(raw_ref_op)]
 #![feature(rustc_attrs)]

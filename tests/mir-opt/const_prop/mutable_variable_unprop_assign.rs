@@ -9,12 +9,12 @@ fn main() {
     // CHECK: debug y => [[y:_.*]];
     // CHECK: debug z => [[z:_.*]];
     // CHECK: [[a]] = foo()
-    // CHECK: [[x]] = const (1_i32, 2_i32);
+    // CHECK: [[x]] = const (285212689_i32, 570425378_i32);
     // CHECK: ([[x]].1: i32) = [[a]];
     // CHECK: [[y]] = ([[x]].1: i32);
     // CHECK: [[z]] = ([[x]].0: i32);
     let a = foo();
-    let mut x: (i32, i32) = (1, 2);
+    let mut x: (i32, i32) = (0x11000011, 0x22000022); // Endian-invariant values.
     x.1 = a;
     let y = x.1;
     let z = x.0;

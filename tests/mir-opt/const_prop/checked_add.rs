@@ -7,6 +7,6 @@ fn main() {
     // CHECK-LABEL: fn main(
     // CHECK: debug x => [[x:_.*]];
     // CHECK: assert(!const false,
-    // CHECK: [[x]] = const 2_u32;
-    let x: u32 = 1 + 1;
+    // CHECK: [[x]] = const 570425378_u32;
+    let x: u32 = 0x11000011 + 0x11000011; // Endian-invariant value.
 }

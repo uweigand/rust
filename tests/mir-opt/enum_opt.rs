@@ -1,5 +1,6 @@
 // skip-filecheck
 //@ test-mir-pass: EnumSizeOpt
+//@ ignore-endian-big
 // EMIT_MIR_FOR_EACH_BIT_WIDTH
 //@ compile-flags: -Zunsound-mir-opts
 
